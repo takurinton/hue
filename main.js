@@ -24,8 +24,8 @@ async function randomLight (lightNumber) {
       method: 'PUT',
       body: JSON.stringify({
          on: true,
-         bri: 200,
-         sat: 200,
+         bri: 150,
+         sat: 250,
          hue: getRandomHue(),
       }),
     });
