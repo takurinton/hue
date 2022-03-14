@@ -33,8 +33,10 @@ async function randomLight (lightNumber) {
 }
 
 async function resetLight () {
-  async fetch(`${HUE_ENDPOINT}/api/${HUE_USERNAME}/lights/${lightNumber}/state`, {
+  await fetch(`${HUE_ENDPOINT}/api/${HUE_USERNAME}/lights/${lightNumber}/state`, {
     method: 'PUT',
     body: JSON.stringify({ on: false }),
   })
 }
+
+
