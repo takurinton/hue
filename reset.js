@@ -1,4 +1,5 @@
-import { HUE_ENDPOINT, HUE_USERNAME } from "./constants.js";
+const HUE_ENDPOINT = `http://${process.env.HUE_ENDPOINT}`;
+const HUE_USERNAME = process.env.HUE_USERNAME;
 
 const lights = [3, 4, 5, 6];
 
